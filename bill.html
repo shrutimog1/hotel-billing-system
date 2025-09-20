@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- bill.html -->
 <!DOCTYPE html>
 <html lang="en">
@@ -55,4 +56,63 @@ html += `<tr>
     container.innerHTML = html;
   }
 </script>
+=======
+<!-- bill.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <header class="hotel-header">
+  <h1>🌟 Paradise Hotel 🌟</h1>
+</header>
+  <meta charset="UTF-8">
+  <title>Your Bill</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="icon" href="images/hotellogo.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Bill Summary</h2>
+  <div id="billDetails">
+  </div>
+  <button onclick="window.print()">Download Bill</button>
+  <a href="menu.html"><br>Back to Menu</a>
+</body>
+
+<script>
+  const container = document.getElementById("billDetails");
+  const selectedItems = JSON.parse(localStorage.getItem("selectedItems")) || [];
+
+  if (!localStorage.getItem("authenticated")) {
+    window.location.href = "login.html";
+  }
+
+  if (selectedItems.length === 0) {
+    container.innerHTML = "<p>No items selected.</p>";
+  } else {
+    let total = 0;
+    let html = "<table><tr><th>Item</th><th>Rate</th><th>Quantity</th><th>Price</th></tr>";
+
+selectedItems.forEach(item => {
+  const itemTotal = item.price * item.quantity;
+  html += `<tr>
+             <td>${item.name}</td>
+             <td>₹${item.price}</td>
+             <td>${item.quantity}</td>
+             <td>₹${itemTotal}</td>
+           </tr>`;
+  total += itemTotal;
+});
+
+html += `<tr>
+           <td colspan="3"><strong>Total</strong></td>
+           <td><strong>₹${total}</strong></td>
+         </tr>`;
+    html += "</table>";
+
+    container.innerHTML = html;
+  }
+</script>
+>>>>>>> f0d8b9c1d96d94cdc0c64e9ee5c4ac19ceb221d6
 </html>
