@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="icon" href="images/hotellogo.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+    <header class="hotel-header">
+  <h1>🌟 Paradise Hotel 🌟</h1>
+</header>
+
+  <h2 class="login-title">Secure Hotel Billing Login</h2>
+
+  <form id="loginForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" required>
+    <div class="error" id="usernameError"></div>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" required>
+    <div class="error" id="passwordError"></div>
+
+    <button type="submit">Login</button>
+  </form>
+
+  <script src="login.js"></script>
+</body>
+</html>

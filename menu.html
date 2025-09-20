@@ -1,0 +1,126 @@
+<!-- menu.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Paradise Hotel Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="icon" href="images/hotellogo.jpg">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="hotel-header">
+    <h1>🌟 Paradise Hotel 🌟</h1>
+  </header>
+  
+  <!-- 🌟 About Section -->
+<section class="about">
+  <h2>About Paradise Hotel</h2>
+  <p>
+    At Paradise Hotel, we serve authentic dishes crafted with passion and the freshest ingredients.
+    From spicy biryanis to mouthwatering desserts, every meal is made to delight your taste buds.
+  </p>
+</section>
+
+<!-- 🌟 Gallery Section -->
+<section class="gallery">
+  <h2>Our Special Dishes</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item"><img src="images/biryani.jpg" alt="Biryani"></div>
+    <div class="gallery-item"><img src="images/pizza.jpg" alt="Pizza"></div>
+    <div class="gallery-item"><img src="images/cake.jpg" alt="Cake"></div>
+    <div class="gallery-item"><img src="images/juice.jpg" alt="Juice"></div>
+    <div class="gallery-item"><img src="images/burger.jpg" alt="Burger"></div>
+    <div class="gallery-item"><img src="images/icecream.jpg" alt="Ice Cream"></div>
+  </div>
+</section>
+
+  <h2>Menu:</h2>
+  <h2>Select Your Food Items:</h2>
+  <form id="menuForm" class="menu-form">
+
+    <!-- 🥘 MEALS Section -->
+    <h3>🍛 Meals</h3>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="images/biryani.jpg" alt="Biryani">
+        <label><input type="checkbox" class="menu-check" data-name="Biryani" data-price="200"> Biryani - ₹200</label>
+        <input type="number" class="qty" min="1" value="1" style="display:none;">
+        <p class="desc">Aromatic rice with spices and chicken.</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/burger.jpg" alt="Burger">
+        <label><input type="checkbox" class="menu-check" data-name="Burger" data-price="120"> Burger - ₹120</label>
+        <input type="number" class="qty" min="1" value="1" style="display:none;">
+        <p class="desc">Juicy burger with fresh lettuce and cheese.</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/pizza.jpg" alt="Pizza">
+        <label><input type="checkbox" class="menu-check" data-name="Pizza" data-price="250"> Pizza - ₹250</label>
+        <input type="number" class="qty" min="1" value="1" style="display:none;">
+        <p class="desc">Cheesy pizza with fresh veggies and toppings.</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/pasta.jpg" alt="Pasta">
+        <label><input type="checkbox" class="menu-check" data-name="Pasta" data-price="180"> Pasta - ₹180</label>
+        <input type="number" class="qty" min="1" value="1" style="display:none;">
+        <p class="desc">Creamy pasta with herbs and spices.</p>
+      </div>
+    </div>
+
+    <!-- 🍹 DRINKS Section -->
+    <h3>🍹 Drinks</h3>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="images/coke.jpg" alt="Coke">
+        <label><input type="checkbox" class="menu-check" data-name="Coke" data-price="60"> Coke - ₹60</label>
+        <input type="number" class="qty" min="1" value="1" style="display:none;">
+        <p class="desc">Chilled soft drink to refresh you.</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/tea.jpg" alt="Tea">
+        <label><input type="checkbox" class="menu-check" data-name="Tea" data-price="20"> Tea - ₹20</label>
+        <input type="number" class="qty" min="1" value="1" style="display:none;">
+        <p class="desc">Hot brewed tea with rich aroma.</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/juice.jpg" alt="Juice">
+        <label><input type="checkbox" class="menu-check" data-name="Juice" data-price="50"> Juice - ₹50</label>
+        <input type="number" class="qty" min="1" value="1" style="display:none;">
+        <p class="desc">Fresh fruit juice, full of vitamins.</p>
+      </div>
+    </div>
+
+    <!-- 🍨 DESSERTS Section -->
+    <h3>🍨 Desserts</h3>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="images/icecream.jpg" alt="Ice Cream">
+        <label><input type="checkbox" class="menu-check" data-name="Ice Cream" data-price="90"> Ice Cream - ₹90</label>
+        <input type="number" class="qty" min="1" value="1" style="display:none;">
+        <p class="desc">Creamy ice cream with classic flavors.</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/cake.jpg" alt="Cake">
+        <label><input type="checkbox" class="menu-check" data-name="Cake" data-price="110"> Cake - ₹110</label>
+        <input type="number" class="qty" min="1" value="1" style="display:none;">
+        <p class="desc">Soft Delicious cake with various toppings.</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/chocolate.jpg" alt="Chocolate">
+        <label><input type="checkbox" class="menu-check" data-name="Chocolate" data-price="70"> Chocolate - ₹70</label>
+        <input type="number" class="qty" min="1" value="1" style="display:none;">
+        <p class="desc">Rich and sweet mouth-watering chocolates.</p>
+      </div>
+    </div>
+
+    <button type="submit">Generate Bill</button>
+  </form>
+
+  <script src="menu.js"></script>
+</body>
+</html>
